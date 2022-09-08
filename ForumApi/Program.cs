@@ -2,6 +2,7 @@ using ForumApi.DAL;
 using ForumApi.DAL.Interfaces;
 using ForumApi.DAL.Repositories;
 using Microsoft.EntityFrameworkCore;
+using Newtonsoft.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -12,7 +13,7 @@ builder.Services.AddDbContext<ApplicationDbContext>(
 
 builder.Services.AddTransient<IPostRepository, PostRepository>();
 builder.Services.AddTransient<ISubjectRepository, SubjectRepository>();
-builder.Services.AddControllers();
+builder.Services.AddControllers()/*.AddNewtonsoftJson()*/;
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
@@ -22,6 +23,11 @@ builder.Services.AddSwaggerGen();
 //    c.AddPolicy("AllowOrigin", options => options.AllowAnyOrigin().AllowAnyHeader().AllowAnyHeader()); 
 //});
 
+//¬озможно работает без этого надо проверить
+builder.Services.AddControllersWithViews().AddNewtonsoftJson(options =>
+options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore)
+    .AddNewtonsoftJson(options => options.SerializerSettings.ContractResolver
+    = new DefaultContractResolver());
 
 var app = builder.Build();
 

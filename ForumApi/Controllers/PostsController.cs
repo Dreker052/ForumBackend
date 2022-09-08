@@ -2,6 +2,7 @@
 using ForumApi.DAL.Interfaces;
 using ForumApi.Domain.Entities;
 using Microsoft.AspNetCore.Mvc;
+using System.Text.Json;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -20,23 +21,30 @@ namespace ForumApi.Controllers
 
         // GET: api/<PostsController>
         [HttpGet]
-        public IEnumerable<string> Get()
+        public IEnumerable<Post> Get()
         {
-            return new string[] { "value1", "value2" };
+            return _postRepository.Select();
+        }
+
+        [HttpGet("{SobjectTitle}")]
+        public IEnumerable<Post> SelectBySobjectId(string SobjectTitle)
+        {
+            return _postRepository.SelectBySobjectTitle(SobjectTitle);
         }
 
         // GET api/<PostsController>/5
-        [HttpGet("{id}")]
-        public string Get(int id)
-        {
-            return "value";
-        }
+        //[HttpGet("{id}")]
+        //public Post Get(int id)
+        //{
+        //    return _postRepository.Get(id);
+        //}
 
         // POST api/<PostsController>
         [HttpPost]
-        public void Post([FromBody] Post value)
+        public void Post([FromBody] Post model)
         {
-            _postRepository.Create(value);
+            //Post user = JsonSerializer.Deserialize<Post>(model);
+            _postRepository.Create(model);
         }
 
         // PUT api/<PostsController>/5
