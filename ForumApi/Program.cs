@@ -13,6 +13,7 @@ builder.Services.AddDbContext<ApplicationDbContext>(
 
 builder.Services.AddTransient<IPostRepository, PostRepository>();
 builder.Services.AddTransient<ISubjectRepository, SubjectRepository>();
+builder.Services.AddTransient<IReplyRepository, ReplyRepository>();
 builder.Services.AddControllers()/*.AddNewtonsoftJson()*/;
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();

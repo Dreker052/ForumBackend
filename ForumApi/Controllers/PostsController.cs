@@ -26,18 +26,18 @@ namespace ForumApi.Controllers
             return _postRepository.Select();
         }
 
-        [HttpGet("{SobjectTitle}")]
-        public IEnumerable<Post> SelectBySobjectId(string SobjectTitle)
+        [HttpGet("{SubjectTitle}")]
+        public IEnumerable<Post> SelectBySubjectTitle(string SubjectTitle)
         {
-            return _postRepository.SelectBySobjectTitle(SobjectTitle);
+            return _postRepository.SelectBySubjectTitle(SubjectTitle);
         }
 
-        // GET api/<PostsController>/5
-        //[HttpGet("{id}")]
-        //public Post Get(int id)
-        //{
-        //    return _postRepository.Get(id);
-        //}
+        //GET api/<PostsController>/5
+        [HttpGet("curpost/{id}")]
+        public Post GetbyId(string id)
+        {
+            return _postRepository.GetById(id);
+        }
 
         // POST api/<PostsController>
         [HttpPost]
