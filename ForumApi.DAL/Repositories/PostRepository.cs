@@ -22,24 +22,34 @@ namespace ForumApi.DAL.Repositories
             _db.SaveChangesAsync();
         }
 
-        public void Delete(int id)
+        public void Delete(string id)
         {
             throw new NotImplementedException();
         }
 
-        public Post Edit(int id, Post entity)
+        public Post Edit(string id, Post entity)
         {
             throw new NotImplementedException();
         }
 
-        public Post Get(int id)
+        public Post Get(string id)
         {
-            throw new NotImplementedException();
+            return _db.Posts.Find(id);
+        }
+
+        public Post GetById(string id)
+        {
+            return _db.Posts.Find(id);
         }
 
         public IEnumerable<Post> Select()
         {
-            throw new NotImplementedException();
+           return _db.Posts.ToList();
+        }
+
+        public IEnumerable<Post> SelectBySubjectTitle(string SubjectTitle)
+        {
+            return _db.Posts.Where(x => x.SubjectTitle == SubjectTitle);
         }
     }
 }

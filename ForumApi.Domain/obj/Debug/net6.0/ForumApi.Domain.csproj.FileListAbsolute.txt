@@ -10,3 +10,15 @@ C:\Projects\forum\ForumApi.Domain\obj\Debug\net6.0\ForumApi.Domain.dll
 C:\Projects\forum\ForumApi.Domain\obj\Debug\net6.0\refint\ForumApi.Domain.dll
 C:\Projects\forum\ForumApi.Domain\obj\Debug\net6.0\ForumApi.Domain.pdb
 C:\Projects\forum\ForumApi.Domain\obj\Debug\net6.0\ref\ForumApi.Domain.dll
+C:\Projects\forum\ForumApi\ForumApi.Domain\bin\Debug\net6.0\ForumApi.Domain.deps.json
+C:\Projects\forum\ForumApi\ForumApi.Domain\bin\Debug\net6.0\ForumApi.Domain.dll
+C:\Projects\forum\ForumApi\ForumApi.Domain\bin\Debug\net6.0\ForumApi.Domain.pdb
+C:\Projects\forum\ForumApi\ForumApi.Domain\obj\Debug\net6.0\ForumApi.Domain.csproj.AssemblyReference.cache
+C:\Projects\forum\ForumApi\ForumApi.Domain\obj\Debug\net6.0\ForumApi.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\forum\ForumApi\ForumApi.Domain\obj\Debug\net6.0\ForumApi.Domain.AssemblyInfoInputs.cache
+C:\Projects\forum\ForumApi\ForumApi.Domain\obj\Debug\net6.0\ForumApi.Domain.AssemblyInfo.cs
+C:\Projects\forum\ForumApi\ForumApi.Domain\obj\Debug\net6.0\ForumApi.Domain.csproj.CoreCompileInputs.cache
+C:\Projects\forum\ForumApi\ForumApi.Domain\obj\Debug\net6.0\ForumApi.Domain.dll
+C:\Projects\forum\ForumApi\ForumApi.Domain\obj\Debug\net6.0\refint\ForumApi.Domain.dll
+C:\Projects\forum\ForumApi\ForumApi.Domain\obj\Debug\net6.0\ForumApi.Domain.pdb
+C:\Projects\forum\ForumApi\ForumApi.Domain\obj\Debug\net6.0\ref\ForumApi.Domain.dll

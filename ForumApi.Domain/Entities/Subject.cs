@@ -8,10 +8,10 @@ namespace ForumApi.Domain.Entities
 {
     public class Subject
     {
-        public int Id { get; set; }
+        public string Id { get; set; }
 
         public string Title { get; set; }
 
-        public List<Post> Posts { get; set; }
+        //public List<Post> Posts { get; set; }
     }
 }

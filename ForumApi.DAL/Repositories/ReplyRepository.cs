@@ -8,18 +8,17 @@ using System.Threading.Tasks;
 
 namespace ForumApi.DAL.Repositories
 {
-    public class SubjectRepository : ISubjectRepository
+    public class ReplyRepository : IReplyRepository
     {
         private readonly ApplicationDbContext _db;
-
-        public SubjectRepository(ApplicationDbContext db)
+        public ReplyRepository(ApplicationDbContext db)
         {
             _db = db;
         }
 
-        public void Create(Subject entity)
+        public void Create(Reply entity)
         {
-            _db.Subjects.Add(entity);
+            _db.Replies.Add(entity);
             _db.SaveChanges();
         }
 
@@ -28,19 +27,24 @@ namespace ForumApi.DAL.Repositories
             throw new NotImplementedException();
         }
 
-        public Subject Edit(string id, Subject entity)
+        public Reply Edit(string id, Reply entity)
         {
             throw new NotImplementedException();
         }
 
-        public Subject Get(string id)
+        public Reply Get(string id)
         {
             throw new NotImplementedException();
         }
 
-        public IEnumerable<Subject> Select()
+        public IEnumerable<Reply> Select()
         {
-            return _db.Subjects.ToList();
+            return _db.Replies.ToList();
+        }
+
+        public IEnumerable<Reply> SelectByPostId(string PostId)
+        {
+            return _db.Replies.Where(x => x.PostId == PostId);
         }
     }
 }

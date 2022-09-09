@@ -6,18 +6,12 @@ using System.Threading.Tasks;
 
 namespace ForumApi.Domain.Entities
 {
-    public class Post
+    public class Reply
     {
         public string Id { get; set; }
-        
-        public string Title { get; set; }
-        
+
         public string Content { get; set; }
-        
-        
-        
-        public string SubjectTitle { get; set; }
-        
-        //public Subject Subject { get; set; }
+
+        public string PostId { get; set; }
     }
 }

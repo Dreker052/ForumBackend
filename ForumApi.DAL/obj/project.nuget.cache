@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "uwNF/fw81pjStWq58PGj+t4tSITukvmMCsWc6t19HbaxBqQgyaFh8J7iIWqpdVevtgU+miKS4OdrwgKoi8UUCQ==",
+  "dgSpecHash": "R25ACW7E9/CP6OJah+w2T4aek8rcrL/88RkM1ljM9cl1WG+dSvC4Dz37xZ8LcIQKTyK5rmM6/C8bYIXQU5o7/w==",
   "success": true,
-  "projectFilePath": "C:\\Projects\\forum\\ForumApi.DAL\\ForumApi.DAL.csproj",
+  "projectFilePath": "C:\\Projects\\forum\\ForumApi\\ForumApi.DAL\\ForumApi.DAL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ikiri\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\ikiri\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",

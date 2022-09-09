@@ -7,12 +7,8 @@ using System.Threading.Tasks;
 
 namespace ForumApi.DAL.Interfaces
 {
-    public interface IPostRepository:IBaseRepository<Post>
+    public interface IReplyRepository: IBaseRepository<Reply>
     {
-        public IEnumerable<Post> SelectBySubjectTitle(string SobjectTitle);
-
-        public Post GetById(string id);
+        public IEnumerable<Reply> SelectByPostId(string PostId);
     }
-
-    
 }

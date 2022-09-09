@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "9pjccw57NBe2XK0es+0ZftcrSjJHu7OEqbjX0Xrx7dKE5VTURlU1AKkV9M5iLB+LLYXSr0kGk7PGklJi0NAuig==",
+  "dgSpecHash": "KZKMjrN74o5pgQFx8AX0WUts0Utk0+M5XKm6/v/6RFFpvbdGgE7oUIWBOyxaJlu4WbKWnxe/V5DPHfoHhFYDuQ==",
   "success": true,
-  "projectFilePath": "C:\\Projects\\forum\\ForumApi.Domain\\ForumApi.Domain.csproj",
+  "projectFilePath": "C:\\Projects\\forum\\ForumApi\\ForumApi.Domain\\ForumApi.Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

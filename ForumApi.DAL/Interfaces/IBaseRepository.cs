@@ -10,12 +10,12 @@ namespace ForumApi.DAL.Interfaces
     {
         void Create(T entity);
 
-        T Get(int id);
+        T Get(string id);
 
         IEnumerable<T> Select();
 
-        void Delete(int id);
+        void Delete(string id);
 
-        T Edit(int id, T entity);
+        T Edit(string id, T entity);
     }
 }

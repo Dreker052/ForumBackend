@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Projects\\forum\\ForumApi.Domain\\ForumApi.Domain.csproj": {}
+    "C:\\Projects\\forum\\ForumApi\\ForumApi.Domain\\ForumApi.Domain.csproj": {}
   },
   "projects": {
-    "C:\\Projects\\forum\\ForumApi.Domain\\ForumApi.Domain.csproj": {
+    "C:\\Projects\\forum\\ForumApi\\ForumApi.Domain\\ForumApi.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projects\\forum\\ForumApi.Domain\\ForumApi.Domain.csproj",
+        "projectUniqueName": "C:\\Projects\\forum\\ForumApi\\ForumApi.Domain\\ForumApi.Domain.csproj",
         "projectName": "ForumApi.Domain",
-        "projectPath": "C:\\Projects\\forum\\ForumApi.Domain\\ForumApi.Domain.csproj",
+        "projectPath": "C:\\Projects\\forum\\ForumApi\\ForumApi.Domain\\ForumApi.Domain.csproj",
         "packagesPath": "C:\\Users\\ikiri\\.nuget\\packages\\",
-        "outputPath": "C:\\Projects\\forum\\ForumApi.Domain\\obj\\",
+        "outputPath": "C:\\Projects\\forum\\ForumApi\\ForumApi.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
