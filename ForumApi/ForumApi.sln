@@ -7,11 +7,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ForumApi", "ForumApi.csproj
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DAL", "DAL", "{DCA46EB6-C73D-4477-A6AF-4F64B43A3937}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ForumApi.DAL", "..\ForumApi.DAL\ForumApi.DAL.csproj", "{9001B3FF-FE49-4764-BBCD-A0B278925BA0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ForumApi.DAL", "..\ForumApi.DAL\ForumApi.DAL.csproj", "{9001B3FF-FE49-4764-BBCD-A0B278925BA0}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{1C4BED1E-6C2B-49D0-A897-11F6D8D7267B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ForumApi.Domain", "..\ForumApi.Domain\ForumApi.Domain.csproj", "{9E27BC4E-8904-44BD-B7BD-9BCDD67EBAAC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ForumApi.Domain", "..\ForumApi.Domain\ForumApi.Domain.csproj", "{9E27BC4E-8904-44BD-B7BD-9BCDD67EBAAC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

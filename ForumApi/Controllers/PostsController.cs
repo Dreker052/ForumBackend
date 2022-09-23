@@ -43,7 +43,6 @@ namespace ForumApi.Controllers
         [HttpPost]
         public void Post([FromBody] Post model)
         {
-            //Post user = JsonSerializer.Deserialize<Post>(model);
             _postRepository.Create(model);
         }
 
