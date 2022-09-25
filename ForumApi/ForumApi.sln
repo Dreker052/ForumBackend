@@ -13,6 +13,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{1C4BED
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ForumApi.Domain", "..\ForumApi.Domain\ForumApi.Domain.csproj", "{9E27BC4E-8904-44BD-B7BD-9BCDD67EBAAC}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Service", "Service", "{40CD2574-6652-4740-BFEA-4A5A624A3E1B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ForumApi.Service", "..\ForumApi.Service\ForumApi.Service.csproj", "{8766EE0D-F5B3-434C-BA6F-6466379EB417}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,6 +35,10 @@ Global
 		{9E27BC4E-8904-44BD-B7BD-9BCDD67EBAAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9E27BC4E-8904-44BD-B7BD-9BCDD67EBAAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9E27BC4E-8904-44BD-B7BD-9BCDD67EBAAC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8766EE0D-F5B3-434C-BA6F-6466379EB417}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8766EE0D-F5B3-434C-BA6F-6466379EB417}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8766EE0D-F5B3-434C-BA6F-6466379EB417}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8766EE0D-F5B3-434C-BA6F-6466379EB417}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -38,6 +46,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{9001B3FF-FE49-4764-BBCD-A0B278925BA0} = {DCA46EB6-C73D-4477-A6AF-4F64B43A3937}
 		{9E27BC4E-8904-44BD-B7BD-9BCDD67EBAAC} = {1C4BED1E-6C2B-49D0-A897-11F6D8D7267B}
+		{8766EE0D-F5B3-434C-BA6F-6466379EB417} = {40CD2574-6652-4740-BFEA-4A5A624A3E1B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4D052EAE-CF61-433C-8D3D-51E690AA9848}

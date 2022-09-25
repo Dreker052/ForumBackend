@@ -1,11 +1,54 @@
 {
   "Version": 1,
-  "Hash": "stR30S04e84FY1TNFOrJYXeLgQ39LMaIfm7WcXNgDO8=",
+  "Hash": "D/RY0gwlGh3MFtFMa+c5uYDIrJvIhs2BN9W3BWTmJxE=",
   "Source": "ForumApi",
   "BasePath": "_content/ForumApi",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": []
+  "DiscoveryPatterns": [
+    {
+      "Name": "ForumApi\\wwwroot",
+      "Source": "ForumApi",
+      "ContentRoot": "C:\\Projects\\forum\\ForumApi\\ForumApi\\wwwroot\\",
+      "BasePath": "_content/ForumApi",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Projects\\forum\\ForumApi\\ForumApi\\wwwroot\\UploadedFiles\\1615553627_35-p-tatu-eskiz-tetrad-smerti-37.jpg",
+      "SourceId": "ForumApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Projects\\forum\\ForumApi\\ForumApi\\wwwroot\\",
+      "BasePath": "_content/ForumApi",
+      "RelativePath": "UploadedFiles/1615553627_35-p-tatu-eskiz-tetrad-smerti-37.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\UploadedFiles\\1615553627_35-p-tatu-eskiz-tetrad-smerti-37.jpg"
+    },
+    {
+      "Identity": "C:\\Projects\\forum\\ForumApi\\ForumApi\\wwwroot\\UploadedFiles\\zUQmz4DlPX4.jpg",
+      "SourceId": "ForumApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Projects\\forum\\ForumApi\\ForumApi\\wwwroot\\",
+      "BasePath": "_content/ForumApi",
+      "RelativePath": "UploadedFiles/zUQmz4DlPX4.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\UploadedFiles\\zUQmz4DlPX4.jpg"
+    }
+  ]
 }

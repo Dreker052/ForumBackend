@@ -19,6 +19,11 @@
   <ItemGroup>
     <ProjectReference Include="..\ForumApi.DAL\ForumApi.DAL.csproj" />
     <ProjectReference Include="..\ForumApi.Domain\ForumApi.Domain.csproj" />
+    <ProjectReference Include="..\ForumApi.Service\ForumApi.Service.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\UploadedFiles\" />
   </ItemGroup>
 
 </Project>

@@ -132,3 +132,6 @@ C:\Projects\forum\ForumApi\ForumApi\bin\Debug\net6.0\Microsoft.AspNetCore.JsonPa
 C:\Projects\forum\ForumApi\ForumApi\bin\Debug\net6.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
 C:\Projects\forum\ForumApi\ForumApi\bin\Debug\net6.0\Newtonsoft.Json.dll
 C:\Projects\forum\ForumApi\ForumApi\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
+C:\Projects\forum\ForumApi\ForumApi\bin\Debug\net6.0\ForumApi.staticwebassets.runtime.json
+C:\Projects\forum\ForumApi\ForumApi\bin\Debug\net6.0\ForumApi.Service.dll
+C:\Projects\forum\ForumApi\ForumApi\bin\Debug\net6.0\ForumApi.Service.pdb

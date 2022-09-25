@@ -1,0 +1,17 @@
+C:\Projects\forum\ForumApi\ForumApi.Service\bin\Debug\net6.0\ForumApi.Service.deps.json
+C:\Projects\forum\ForumApi\ForumApi.Service\bin\Debug\net6.0\ForumApi.Service.dll
+C:\Projects\forum\ForumApi\ForumApi.Service\bin\Debug\net6.0\ForumApi.Service.pdb
+C:\Projects\forum\ForumApi\ForumApi.Service\obj\Debug\net6.0\ForumApi.Service.csproj.AssemblyReference.cache
+C:\Projects\forum\ForumApi\ForumApi.Service\obj\Debug\net6.0\ForumApi.Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\forum\ForumApi\ForumApi.Service\obj\Debug\net6.0\ForumApi.Service.AssemblyInfoInputs.cache
+C:\Projects\forum\ForumApi\ForumApi.Service\obj\Debug\net6.0\ForumApi.Service.AssemblyInfo.cs
+C:\Projects\forum\ForumApi\ForumApi.Service\obj\Debug\net6.0\ForumApi.Service.csproj.CoreCompileInputs.cache
+C:\Projects\forum\ForumApi\ForumApi.Service\obj\Debug\net6.0\ForumApi.Service.dll
+C:\Projects\forum\ForumApi\ForumApi.Service\obj\Debug\net6.0\refint\ForumApi.Service.dll
+C:\Projects\forum\ForumApi\ForumApi.Service\obj\Debug\net6.0\ForumApi.Service.pdb
+C:\Projects\forum\ForumApi\ForumApi.Service\obj\Debug\net6.0\ref\ForumApi.Service.dll
+C:\Projects\forum\ForumApi\ForumApi.Service\bin\Debug\net6.0\ForumApi.DAL.dll
+C:\Projects\forum\ForumApi\ForumApi.Service\bin\Debug\net6.0\ForumApi.Domain.dll
+C:\Projects\forum\ForumApi\ForumApi.Service\bin\Debug\net6.0\ForumApi.DAL.pdb
+C:\Projects\forum\ForumApi\ForumApi.Service\bin\Debug\net6.0\ForumApi.Domain.pdb
+C:\Projects\forum\ForumApi\ForumApi.Service\obj\Debug\net6.0\ForumApi.Service.csproj.CopyComplete

@@ -16,5 +16,7 @@ namespace ForumApi.DAL
         public DbSet<Subject> Subjects { get; set; }
 
         public DbSet<Reply> Replies { get; set; }
+
+        public DbSet<UploadedFile> UploadedFiles { get; set; }
     }
 }

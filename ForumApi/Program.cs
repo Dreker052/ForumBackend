@@ -1,6 +1,8 @@
 using ForumApi.DAL;
 using ForumApi.DAL.Interfaces;
 using ForumApi.DAL.Repositories;
+using ForumApi.Service.Implementations;
+using ForumApi.Service.Interfaces;
 using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json.Serialization;
 
@@ -13,7 +15,9 @@ builder.Services.AddDbContext<ApplicationDbContext>(
 
 builder.Services.AddTransient<IPostRepository, PostRepository>();
 builder.Services.AddTransient<ISubjectRepository, SubjectRepository>();
-builder.Services.AddTransient<IReplyRepository, ReplyRepository>();
+builder.Services.AddTransient<IReplyRepository, ReplyRepository>(); 
+builder.Services.AddTransient<IUploadedFileRepository, UploadedFileRepository>();
+builder.Services.AddTransient<IFileUploadService, FileUploadService>();
 builder.Services.AddControllers()/*.AddNewtonsoftJson()*/;
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
