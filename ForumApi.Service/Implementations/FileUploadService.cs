@@ -49,6 +49,32 @@ namespace ForumApi.Service.Implementations
             }
         }
 
-        
+        public async Task<bool> UploadFilesAsync(IFormFileCollection files)
+        {
+            try
+            {
+                if(files != null)
+                {
+                    foreach (var file in files)
+                    {
+                        string path = "/UploadedFiles/" + file.FileName;
+                        using (var fileStream = new FileStream(_appEnvironment.WebRootPath + path, FileMode.Create))
+                        {
+                            await file.CopyToAsync(fileStream);
+                        }
+                        UploadedFile uploadedFile = new UploadedFile { Name = file.Name, Path = path };
+                        _uploadedFileRepository.Create(uploadedFile);
+                    }
+
+                    return true;
+                }
+
+                return false;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("File copy failed", ex);
+            }
+        }
     }
 }

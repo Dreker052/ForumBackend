@@ -15,23 +15,9 @@ namespace ForumApi.Controllers
         {
             _fileUploadService = fileUploadService;
         }
-        // GET: api/<ValuesController>
-        [HttpGet]
-        public IEnumerable<string> Get()
-        {
-            return new string[] { "value1", "value2" };
-        }
 
-        // GET api/<ValuesController>/5
-        [HttpGet("{id}")]
-        public string Get(int id)
-        {
-            return "value";
-        }
-
-        // POST api/<ValuesController>
-        [HttpPost]
-        public async Task Post(IFormFile file)
+        [HttpPost("UploadFile")]
+        public async Task UploadFileAsync(IFormFile file)
         {
             try
             {
@@ -41,26 +27,35 @@ namespace ForumApi.Controllers
                 }
                 else
                 {
-                    BadRequest("File Upload Failed");
+                    BadRequest("File upload failed");
                 }
             }
-            catch (Exception)
+            catch (Exception ex)
             {
 
-                throw;
+                throw new Exception("File upload failed", ex);
             }
         }
 
-        // PUT api/<ValuesController>/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
+        [HttpPost("UploadFiles")]
+        public async Task UploadFilesAsync(IFormFileCollection files)
         {
-        }
+            try
+            {
+                if (await _fileUploadService.UploadFilesAsync(files))
+                {
+                    Ok("Files upload successful");
+                }
+                else
+                {
+                    BadRequest("Files upload failed");
+                }
+            }
+            catch (Exception ex)
+            {
 
-        // DELETE api/<ValuesController>/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
-        {
-        }
+                throw new Exception("Files upload failed", ex);
+            }
+        }  
     }
 }
