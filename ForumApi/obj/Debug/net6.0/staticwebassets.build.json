@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "D/RY0gwlGh3MFtFMa+c5uYDIrJvIhs2BN9W3BWTmJxE=",
+  "Hash": "6FCMsJR+Y7dT9gk6TR44lCl8yUvzMPEroqGI8RHIzQk=",
   "Source": "ForumApi",
   "BasePath": "_content/ForumApi",
   "Mode": "Default",
@@ -32,6 +32,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\UploadedFiles\\1615553627_35-p-tatu-eskiz-tetrad-smerti-37.jpg"
+    },
+    {
+      "Identity": "C:\\Projects\\forum\\ForumApi\\ForumApi\\wwwroot\\UploadedFiles\\tatu-v-stile-naruto-28.jpg",
+      "SourceId": "ForumApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Projects\\forum\\ForumApi\\ForumApi\\wwwroot\\",
+      "BasePath": "_content/ForumApi",
+      "RelativePath": "UploadedFiles/tatu-v-stile-naruto-28.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\UploadedFiles\\tatu-v-stile-naruto-28.jpg"
+    },
+    {
+      "Identity": "C:\\Projects\\forum\\ForumApi\\ForumApi\\wwwroot\\UploadedFiles\\yfJXGsNv7n0.jpg",
+      "SourceId": "ForumApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Projects\\forum\\ForumApi\\ForumApi\\wwwroot\\",
+      "BasePath": "_content/ForumApi",
+      "RelativePath": "UploadedFiles/yfJXGsNv7n0.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\UploadedFiles\\yfJXGsNv7n0.jpg"
     },
     {
       "Identity": "C:\\Projects\\forum\\ForumApi\\ForumApi\\wwwroot\\UploadedFiles\\zUQmz4DlPX4.jpg",

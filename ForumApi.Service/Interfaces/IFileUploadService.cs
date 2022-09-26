@@ -9,8 +9,8 @@ namespace ForumApi.Service.Interfaces
 {
     public interface IFileUploadService
     {
-        public Task<bool> UploadFileAsync(IFormFile file);
+        public Task<bool> UploadFileAsync(IFormFile file, string postId);
 
-        public Task<bool> UploadFilesAsync(IFormFileCollection files);
+        public Task<bool> UploadFilesAsync(IFormFileCollection files, string postId);
     }
 }

@@ -17,11 +17,11 @@ namespace ForumApi.Controllers
         }
 
         [HttpPost("UploadFile")]
-        public async Task UploadFileAsync(IFormFile file)
+        public async Task UploadFileAsync(IFormFile file, string postId)
         {
             try
             {
-                if (await _fileUploadService.UploadFileAsync(file))
+                if (await _fileUploadService.UploadFileAsync(file, postId))
                 {
                     Ok("File upload successful");
                 }
@@ -38,11 +38,11 @@ namespace ForumApi.Controllers
         }
 
         [HttpPost("UploadFiles")]
-        public async Task UploadFilesAsync(IFormFileCollection files)
+        public async Task UploadFilesAsync(IFormFileCollection files, string postId)
         {
             try
             {
-                if (await _fileUploadService.UploadFilesAsync(files))
+                if (await _fileUploadService.UploadFilesAsync(files, postId))
                 {
                     Ok("Files upload successful");
                 }

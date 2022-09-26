@@ -23,7 +23,7 @@ namespace ForumApi.Service.Implementations
             _uploadedFileRepository = uploadedFileRepository;
         }
 
-        public async Task<bool> UploadFileAsync(IFormFile file)
+        public async Task<bool> UploadFileAsync(IFormFile file, string postId)
         {
             try
             {
@@ -34,7 +34,7 @@ namespace ForumApi.Service.Implementations
                     {
                         await file.CopyToAsync(fileStream);
                     }
-                    UploadedFile uploadedFile = new UploadedFile { Name = file.Name, Path = path };
+                    UploadedFile uploadedFile = new UploadedFile { PostId = postId, Path = path };
                     _uploadedFileRepository.Create(uploadedFile);
 
                     return true;
@@ -49,7 +49,7 @@ namespace ForumApi.Service.Implementations
             }
         }
 
-        public async Task<bool> UploadFilesAsync(IFormFileCollection files)
+        public async Task<bool> UploadFilesAsync(IFormFileCollection files, string postId)
         {
             try
             {
@@ -62,7 +62,7 @@ namespace ForumApi.Service.Implementations
                         {
                             await file.CopyToAsync(fileStream);
                         }
-                        UploadedFile uploadedFile = new UploadedFile { Name = file.Name, Path = path };
+                        UploadedFile uploadedFile = new UploadedFile { PostId = postId, Path = path };
                         _uploadedFileRepository.Create(uploadedFile);
                     }
 
