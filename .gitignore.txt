@@ -1,1 +1,1 @@
-.wwwroot
+ForumApi/wwwroot
