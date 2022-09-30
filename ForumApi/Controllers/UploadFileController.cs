@@ -1,4 +1,5 @@
-﻿using ForumApi.Domain.Entities;
+﻿using ForumApi.DAL.Interfaces;
+using ForumApi.Domain.Entities;
 using ForumApi.Service.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 
@@ -10,10 +11,12 @@ namespace ForumApi.Controllers
     public class UploadFileController : ControllerBase
     {
         private readonly IFileUploadService _fileUploadService;
+        private readonly IUploadedFileRepository _uploadedFileRepository;
 
-        public UploadFileController(IFileUploadService fileUploadService)
+        public UploadFileController(IFileUploadService fileUploadService, IUploadedFileRepository uploadedFileRepository)
         {
             _fileUploadService = fileUploadService;
+            _uploadedFileRepository = uploadedFileRepository;
         }
 
         [HttpPost("UploadFile")]
@@ -56,6 +59,18 @@ namespace ForumApi.Controllers
 
                 throw new Exception("Files upload failed", ex);
             }
-        }  
+        }
+
+        [HttpGet("{PostId}")]
+        public IEnumerable<UploadedFile> SelectByPostId(string postId)
+        {
+            return _uploadedFileRepository.SelectByPostId(postId);
+        }
+
+        [HttpGet]
+        public IEnumerable<UploadedFile> Select()
+        {
+            return _uploadedFileRepository.Select();
+        }
     }
 }

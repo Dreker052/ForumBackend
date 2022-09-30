@@ -16,11 +16,13 @@ namespace ForumApi.Service.Implementations
     {
         private readonly IHostingEnvironment _appEnvironment;
         private readonly IUploadedFileRepository _uploadedFileRepository;
+        private readonly ICreateRandomNameService _createRandomNameService;
 
-        public FileUploadService(IHostingEnvironment appEnvironment, IUploadedFileRepository uploadedFileRepository)
+        public FileUploadService(IHostingEnvironment appEnvironment, IUploadedFileRepository uploadedFileRepository, ICreateRandomNameService createRandomNameService)
         {
             _appEnvironment = appEnvironment;
             _uploadedFileRepository = uploadedFileRepository;
+            _createRandomNameService = createRandomNameService;
         }
 
         public async Task<bool> UploadFileAsync(IFormFile file, string postId)
@@ -29,7 +31,7 @@ namespace ForumApi.Service.Implementations
             {
                 if (file != null)
                 {
-                    string path = "/UploadedFiles/" + file.FileName;
+                    string path = "/UploadedFiles/" + _createRandomNameService.CreateRandomName(24) + file.FileName;
                     using (var fileStream = new FileStream(_appEnvironment.WebRootPath + path, FileMode.Create))
                     {
                         await file.CopyToAsync(fileStream);
@@ -57,7 +59,7 @@ namespace ForumApi.Service.Implementations
                 {
                     foreach (var file in files)
                     {
-                        string path = "/UploadedFiles/" + file.FileName;
+                        string path = "/UploadedFiles/" + _createRandomNameService.CreateRandomName(24) + file.FileName;
                         using (var fileStream = new FileStream(_appEnvironment.WebRootPath + path, FileMode.Create))
                         {
                             await file.CopyToAsync(fileStream);

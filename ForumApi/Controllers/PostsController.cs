@@ -19,7 +19,6 @@ namespace ForumApi.Controllers
             _postRepository = postRepository;
         }
 
-        // GET: api/<PostsController>
         [HttpGet]
         public IEnumerable<Post> Get()
         {
@@ -32,30 +31,16 @@ namespace ForumApi.Controllers
             return _postRepository.SelectBySubjectTitle(SubjectTitle);
         }
 
-        //GET api/<PostsController>/5
         [HttpGet("curpost/{id}")]
         public Post GetbyId(string id)
         {
             return _postRepository.GetById(id);
         }
 
-        // POST api/<PostsController>
         [HttpPost]
         public void Post([FromBody] Post model)
         {
             _postRepository.Create(model);
-        }
-
-        // PUT api/<PostsController>/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
-        {
-        }
-
-        // DELETE api/<PostsController>/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
-        {
-        }
+        }  
     }
 }

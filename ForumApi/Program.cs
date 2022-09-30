@@ -16,8 +16,9 @@ builder.Services.AddDbContext<ApplicationDbContext>(
 builder.Services.AddTransient<IPostRepository, PostRepository>();
 builder.Services.AddTransient<ISubjectRepository, SubjectRepository>();
 builder.Services.AddTransient<IReplyRepository, ReplyRepository>(); 
-builder.Services.AddTransient<IUploadedFileRepository, UploadedFileRepository>();
+builder.Services.AddTransient<IUploadedFileRepository, UploadedFileRepository>(); 
 builder.Services.AddTransient<IFileUploadService, FileUploadService>();
+builder.Services.AddTransient<ICreateRandomNameService, CreateRandomNameService>();
 builder.Services.AddControllers()/*.AddNewtonsoftJson()*/;
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();

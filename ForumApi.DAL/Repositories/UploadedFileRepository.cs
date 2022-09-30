@@ -38,7 +38,12 @@ namespace ForumApi.DAL.Repositories
 
         public IEnumerable<UploadedFile> Select()
         {
-            throw new NotImplementedException();
+            return _db.UploadedFiles.ToList();
+        }
+
+        public IEnumerable<UploadedFile> SelectByPostId(string postId)
+        {
+            return _db.UploadedFiles.Where(x => x.PostId == postId);
         }
     }
 }

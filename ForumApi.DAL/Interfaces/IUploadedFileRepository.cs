@@ -9,6 +9,6 @@ namespace ForumApi.DAL.Interfaces
 {
     public interface IUploadedFileRepository:IBaseRepository<UploadedFile>
     {
-
+        public IEnumerable<UploadedFile> SelectByPostId(string postId);
     }
 }
